@@ -91,6 +91,8 @@
   }
 }
 
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -8764,6 +8766,13 @@ textarea.form-control-lg {
   .ps-sm-4 {
     padding-left: 1.5rem !important;
   }
+
+  .buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: green;
+    border-radius: 5px;
+  }
   .ps-sm-5 {
     padding-left: 3rem !important;
   }
@@ -10889,6 +10898,19 @@ html {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+}
+
+
+
+#countLabel {
+  display:  block;
+  text-align: center;
+  font-size: 10em;
+  font-family: Helvetica;
+}
+
+#btnContainer {
+  text-align: center;
 }
 
 #mainNav {

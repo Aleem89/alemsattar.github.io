@@ -70,7 +70,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/counter.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -134,8 +134,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hi, I am Aleem Sattar and I am a Developer.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">My earliest computer memories include my dad teaching me how to use MS-DOS. Thanks Baba!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Hi, I am Aleem Sattar and I created this website</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">How does one come up with just a few lines of words to describe themselves? (Most) Humans are complex beings, with a wide range of likes, dislikes, values, fears, beliefs, and etc. Anyways, this website is slowly, but surely under construction and thanks for visiting!</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -158,64 +158,126 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgeglvpo" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name">Full Name</label>
+                      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                      <label for="email-address">Email Address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                      <label for="message">Message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="Send Aleem a message!" required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                  </form><style>/* reset */
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm fieldset,
+                  #fs-frm optgroup,
+                  #fs-frm label,
+                  #fs-frm #card-element:disabled {
+                    font-family: inherit;
+                    font-size: 100%;
+                    color: inherit;
+                    border: none;
+                    border-radius: 0;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                  }
+                  #fs-frm label,
+                  #fs-frm legend,
+                  #fs-frm ::placeholder {
+                    font-size: .825rem;
+                    margin-bottom: .5rem;
+                    padding-top: .2rem;
+                    display: flex;
+                    align-items: baseline;
+                  }
+                  
+                  /* border, padding, margin, width */
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm #card-element {
+                    border: 1px solid rgba(0,0,0,0.2);
+                    background-color: rgba(255,255,255,0.9);
+                    padding: .75em 1rem;
+                    margin-bottom: 1.5rem;
+                  }
+                  #fs-frm input:focus,
+                  #fs-frm select:focus,
+                  #fs-frm textarea:focus {
+                    background-color: rgb(26, 188, 156);
+                    outline-style: solid;
+                    outline-width: thin;
+                    outline-color: gray;
+                    outline-offset: -1px;
+                  }
+                  #fs-frm [type="text"],
+                  #fs-frm [type="email"] {
+                    width: 100%;
+                  }
+                  #fs-frm [type="button"],
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    width: auto;
+                    cursor: pointer;
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button;
+                  }
+                  #fs-frm [type="button"]:focus,
+                  #fs-frm [type="submit"]:focus,
+                  #fs-frm [type="reset"]:focus {
+                    outline: none;
+                  }
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    margin-bottom: 0;
+                  }
+                  #fs-frm select {
+                    text-transform: none;
+                  }
+                  
+                  #fs-frm [type="checkbox"] {
+                    -webkit-appearance: checkbox;
+                    -moz-appearance: checkbox;
+                    appearance: checkbox;
+                    display: inline-block;
+                    width: auto;
+                    margin: 0 .5em 0 0 !important;
+                  }
+                  
+                  #fs-frm [type="radio"] {
+                    -webkit-appearance: radio;
+                    -moz-appearance: radio;
+                    appearance: radio;
+                  }
+                  
+                  /* address, locale */
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    display: inline;
+                  }
+                  #fs-frm fieldset.locale input[name="city"] {
+                    width: 52%;
+                  }
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    width: 20%;
+                  }
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"] {
+                    margin-right: 3%;
+                  }
+                  </style>
+                    
         </section>
         <!-- Footer-->
         <footer class="footer text-center">
@@ -225,9 +287,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            Currently
+                            
                             <br />
-                            Undefined
+                            
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -265,17 +327,23 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Counter</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
+                                    <label id="countLabel">0</label><br>
+                                    <div id="btnContainer">
+                                        <button id="decreaseBtn" class="buttons">decrease</button>
+                                        <button id="resetBtn" class="buttons">reset</button>
+                                        <button id="increaseBtn" class="buttons">increase</button><br><br>
+                                    </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">There will be a paragraph of text here, at some point</p>
+                                    <p class="mb-4">This is a practice counter app</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
