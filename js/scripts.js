@@ -73,5 +73,16 @@ window.addEventListener('DOMContentLoaded', event => {
         countLabel.textContent = count;
     }
 
+    // Get the current date
+    let currentDate = new Date();
+    // Get the day of the week (0-6)
+    let dayIndex = currentDate.getDay();
+    // Array of days of the week
+    let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // Get the name of the day using the day index
+    let dayName = daysOfWeek[dayIndex];
+    // Display the day on the webpage
+    document.getElementById("dayOfWeek").textContent = dayName;
+
 
 });
