@@ -50,7 +50,7 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 250, 250, 250;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
@@ -8769,8 +8769,8 @@ textarea.form-control-lg {
 
   .buttons {
     padding: 10px 20px;
-    font-size: 1.5em;
-    color: green;
+    font-size: 1.5em; 
+    color: rgb(0, 102, 0);
     border-radius: 5px;
   }
   .ps-sm-5 {

@@ -83,6 +83,6 @@ window.addEventListener('DOMContentLoaded', event => {
     let dayName = daysOfWeek[dayIndex];
     // Display the day on the webpage
     document.getElementById("dayOfWeek").textContent = dayName;
-
+        
 
 });
