@@ -75,14 +75,41 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Get the current date
     let currentDate = new Date();
+
     // Get the day of the week (0-6)
     let dayIndex = currentDate.getDay();
+    
     // Array of days of the week
     let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
     // Get the name of the day using the day index
-    let dayName = daysOfWeek[dayIndex];
-    // Display the day on the webpage
-    document.getElementById("dayOfWeek").textContent = dayName;
-        
+    let dayName = daysOfWeek[currentDate.getDay()];
+    
+    // Get the day of the month
+    let dayOfMonth = currentDate.getDate();
+    
+    // Array of months (0-11)
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    // Get the month name using the month index
+    let monthName = months[currentDate.getMonth()];
+    
+    // Get the year
+    let year = currentDate.getFullYear();
+    
+    // Display the day and date on the webpage
+    document.getElementById("dayOfWeek").textContent = `${dayName} ${monthName} ${dayOfMonth}${getOrdinalSuffix(dayOfMonth)}, ${year}`;
+    
+    // Function to get the ordinal suffix for the day of the month
+    function getOrdinalSuffix(day) {
+        if (day > 3 && day < 21) return 'th';
+        switch (day % 10) {
+            case 1:  return "st";
+            case 2:  return "nd";
+            case 3:  return "rd";
+            default: return "th";
+        }
+    }
+    
 
 });
