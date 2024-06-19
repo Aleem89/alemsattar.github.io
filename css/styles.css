@@ -10989,6 +10989,14 @@ html {
   color: #6c757d;
 }
 
+#imageSwap {
+  transition: transform 0.3s ease-in-out;
+}
+
+#imageSwap:hover {
+  transform: scale(1.1);
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
@@ -11001,7 +11009,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 15.5rem;
 }
 
 @media (min-width: 992px) {
