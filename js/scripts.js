@@ -100,20 +100,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Display the day and date on the webpage
     document.getElementById("dayOfWeek").textContent = `${monthName} ${dayOfMonth}${getOrdinalSuffix(dayOfMonth)}, ${year}`;
     
-    // Get the image element
-    const imageSwap = document.getElementById("imageSwap");
-
-    // Add an event listener for the click event
-    imageSwap.addEventListener("click", function() {
-    // Check if the image source is "ace.png"
-    if (this.src.includes("ace.png")) {
-    // If it is, change the source to "newImage.png"
-    this.src = "assets/img/aleemavatar.png";
-      } else {
-    // If it's not, change the source back to "ace.png"
-    this.src = "assets/img/ace.png";
-      }
-    });
+ 
 
     // Function to get the ordinal suffix for the day of the month
     function getOrdinalSuffix(day) {
